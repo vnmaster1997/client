@@ -1,0 +1,12 @@
+.container-fluid {
+    color: #ababab;
+    background-color: #313639;
+    border-color: #ababab;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: block;
+}
+
+.mg-top-25 {
+    margin-top: 25px !important;
+}

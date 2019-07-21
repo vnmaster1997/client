@@ -1,0 +1,85 @@
+.information {
+    margin-top: 50px;
+}
+
+.img-bg {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.img-min-bg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.heading-color {
+    font-weight: 900px;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 42px;
+}
+
+.accent-color {
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    line-height: 2px;
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    color: #D8C51F;
+}
+
+.space {
+    height: 55px;
+}
+
+.column-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.ib-shape-inner {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid;
+    transition: all .5s;
+    background-color: #f7f9fa;
+    border-color: #f7f9fa !important;
+    color: #1e3f5a;
+    font-size: 32px;
+    line-height: 76px;
+    border-radius: 50%;
+}
+
+.ib-content {
+    margin-top: 20px;
+}
+
+.iconbox-title p{
+    margin-top: 5px;
+    font-size: 18px !important;
+}
+
+h4 {
+    font-family: nunito sans;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 0em !important;
+    line-height: 24px;
+}

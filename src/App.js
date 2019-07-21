@@ -1,26 +1,73 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from '../src/containers/Home'
+import Login from '../src/containers/Login'
+import Register from '../src/components/Register'
+import axios from './axios'
+
+class App extends Component {
+
+  state = {}
+
+  _onLogin = () => {
+    axios.post("/api/v1/auth",{
+      username: "admin",
+      password: "admin"
+    })
+    .then(res => {
+      this.setState({
+        username: res.data.username,
+        id: res.data.id
+      })
+    })
+    .catch(err => console.log(err))
+  }
+
+  _onRegister = () => {
+    axios.post("/api/v1/user", {
+      username: "admin",
+      password: "admin"
+    })
+    .then(res => {
+      this.setState({
+        username: res.data.username,
+        id: res.data.id
+      })
+    })
+  }
+
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App container">
+          <Switch>
+          <Route exact path="/" render={(props) => (
+            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          )} />
+          {/* <Route exact path="/shop" render={(props) => (
+            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          )} />
+          <Route exact path="/blog" render={(props) => (
+            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          )} />
+          <Route exact path="/about_us" render={(props) => (
+            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          )} />
+          <Route exact path="/contact_us" render={(props) => (
+            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          )} /> */}
+          <Route exact path="/login" render={(props) => (
+            <Login />
+          )} />
+          <Route exact path="/register" render={(props) => (
+            <Register />
+          )} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App;
