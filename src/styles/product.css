@@ -1,0 +1,32 @@
+.product-item-inner {
+    position: relative;
+    /* border: 2px solid #efefef; */
+    transition: all .3s;
+    /* width: 100%; */
+}
+
+/* .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+} */
+
+.product-thumb {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.product-image-hover {
+    position: relative;
+}
+
+.entry-thubnail {
+    position: relative;
+}
+
+.entry-thubnail-overlay {
+    position: relative;
+}
+
+.img-responsive {
+    display: block;
+}

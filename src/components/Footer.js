@@ -26,12 +26,29 @@ class Footer extends Component {
                         </aside>
                     </div>
                 </div>
-                <div className="public-column column-container col-sm-6 col-lg-offset-1 col-md-2"></div>
-                <div className="public-column column-container col-sm-6 col-md-2"></div>
-                <div className="public-column column-container col-sm-6 col-md-3"></div>
-                <div className="public-column column-container col-sm-12"></div>
-                <div className="public-column column-container col-sm-6"></div>
-                <div className="public-column column-container col-sm-6"></div>
+                <div className="public-column column-container public-info col-sm-6 col-lg-offset-1 col-md-4">
+                    <h2>INFORMATION</h2>
+
+                    <div></div>
+
+                    <ul>
+                        <li>New Products</li>
+                        <li>Top Sellers</li>
+                        <li>Our Blog</li>
+                        <li>About our shop</li>
+                    </ul>
+                </div>
+                <div className="public-column column-container public-info col-sm-6 col-md-4">
+                    <h2>USERFUL LINKS</h2>
+
+                    <div></div>
+                    <ul>
+                        <li>Out team</li>
+                        <li>Out Blog</li>
+                        <li>About Us</li>
+                        <li>Secure Shopping</li>
+                    </ul>
+                </div>
             </footer>
         )
     }
