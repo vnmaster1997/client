@@ -11,9 +11,9 @@ class Register extends Component {
         )
 
         return (
-            <div>
+            <span>
                 {display}
-            </div>
+            </span>
         )
     }
 }

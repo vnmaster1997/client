@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from '../src/containers/Home'
+import Cart from '../src/containers/Cart'
 import Login from '../src/containers/Login'
 import Register from '../src/components/Register'
 import axios from './axios'
@@ -40,15 +41,15 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App container">
+        <div className="App">
           <Switch>
           <Route exact path="/" render={(props) => (
             <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
           )} />
-          {/* <Route exact path="/shop" render={(props) => (
-            <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
+          <Route exact path="/cart" render={(props) => (
+            <Cart {...props} />
           )} />
-          <Route exact path="/blog" render={(props) => (
+          {/* <Route exact path="/blog" render={(props) => (
             <Home {...props}  username={this.state.username} onLogin={this._onLogin}/>
           )} />
           <Route exact path="/about_us" render={(props) => (

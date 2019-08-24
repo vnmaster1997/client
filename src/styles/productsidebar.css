@@ -1,0 +1,23 @@
+.sidebar-product-link {
+    font-size: 14px;
+    letter-spacing: 0;
+    display: block;
+    font-weight: 800;
+    color: inherit;
+}
+
+.sidebar-product-link:hover {
+    text-decoration: none;
+    color: #ddb758;
+}
+
+.product-image {
+    float: left;
+    width: 80px;
+    margin: 0;
+    margin-right: 20px;
+    height: auto;
+    box-shadow: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
